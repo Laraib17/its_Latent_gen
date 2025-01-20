@@ -14,9 +14,9 @@ describe("Signup endpoints",()=>{
     });
     expect(response1.status).toBe(200);
     expect(response2.status).toBe(200);
-    
+    expect(response1.data).not.toBeNull();
     expect(async()=>{
-      const response3 = await axios.post(`${backenbUrl}/api/v1/signup`, {
+      await axios.post(`${backenbUrl}/api/v1/signup`, {
         number: phone_no,
       });
     }).toThrow(); 
