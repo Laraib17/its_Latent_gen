@@ -9,7 +9,7 @@
     "test": "Vitest"
   },
   "devDependencies": {
-    "@repo/typescript-config":"workspacce*"
+    "@repo/typescript-config": "workspace:*"
   },
   "keywords": [],
   "author": "",
